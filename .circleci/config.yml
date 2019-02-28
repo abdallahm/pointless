@@ -33,6 +33,8 @@ jobs:
       - run:
           name: "Package Extension"
           command: git archive -o pointless.zip HEAD
+      - store_artifacts:
+          path: /root/project/pointless.zip
       - persist_to_workspace:
           root: /root/project
           paths:
