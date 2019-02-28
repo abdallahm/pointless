@@ -51,4 +51,4 @@ jobs:
           path: "/root/workspace/pointless.zip"
       - run:
           name: "Publish to the Google Chrome Store"
-          command: publish /root/workspace/pointless.zip
+          command: publish /root/project/pointless.zip
