@@ -33,6 +33,9 @@ jobs:
       - run:
           name: "Package Extension"
           command: git archive -o pointless.zip HEAD
+      - run:
+          name: "Publish to the Google Chrome Store"
+          command: publish /root/project/pointless.zip
       - store_artifacts:
           path: /root/project/pointless.zip
       - persist_to_workspace:
